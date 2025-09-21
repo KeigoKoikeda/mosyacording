@@ -1,0 +1,101 @@
+@charset "UTF-8";
+html{
+    font-size: 100%;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    background-color: #f4f9ff;
+}
+/*サイトの幅*/
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+/*サイト内の幅*/
+.inside{
+    max-width: 600px;
+    margin: 0 auto;
+}
+/*ヘッダー*/
+header img{
+    margin-top: 60px;
+    width: 160px;
+    margin-bottom: 15px;
+}
+/*メインビジュアル*/
+main > img{
+    margin-bottom: 60px;
+}
+/*INDEX*/
+article{
+    background-color: #fff;
+    width: 1000px;
+    margin-right: 300px;
+}
+/*DETAIL*/
+#detail {
+  margin-bottom: 100px;
+}
+#detail .content {
+  display: flex;
+  align-items: flex-start;
+}
+#detail .content .title {
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+#detail .content .img {
+  width: 270px;
+  margin-right: 60px;
+}
+#detail .content .text p {
+  margin-bottom: 20px;
+}
+#detail .content dl {
+  display: flex;      /* dt、ddを横並びにする */
+  flex-wrap: wrap;    /* dtとddが100%になったら、横並びを折り返す */
+  padding: 16px 0;
+  margin-bottom: 25px;
+  border-top: solid 1px #dedede;
+  border-bottom: solid 1px #dedede;
+}
+#detail .content dt {
+  width: 25%;
+}
+#detail .content dd {
+  width: 75%;
+}
+#detail .content .link {
+  color: #333;
+}
+#detail .content .link:hover {
+  opacity: 0.8;
+}
+/*footer*/
+#footer {
+  font-size: 0.625rem;
+  padding: 15px 0;
+}
+@media screen and (max-width: 1024px) {
+  .inner {
+    padding: 0 40px;
+  }
+
+  #header {
+    padding: 0 10px;
+  }
+
+  #mainvisual {
+    padding: 0 10px;
+  }
+
+  #detail .content {
+    flex-direction: column;  /* 縦並びにする */
+  }
+  #detail .content .img {
+    width: 100%;
+    margin: 0 0 25px 0;
+  }
+}
