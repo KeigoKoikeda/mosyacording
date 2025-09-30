@@ -1,0 +1,110 @@
+@charset "UTF-8";
+/*リセットCSS*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    color: #2b2a27;
+    font-family: "Helvetica Neue", "Arial", "Hiragino Sans", "Meiryo", sans-serif;
+}
+img{
+    max-width: 100%;
+}
+ul{
+    list-style: none;
+}
+a{
+    color: #2b2a27;
+}
+/*横並びにする*/
+.flex1{
+    display: flex;
+}
+/*画像*/
+.main-picture{
+    width: 50%;
+}
+.main-picture img{
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+}
+/*右上部分の余白調整*/
+.flex2{
+    width: 50%;
+    padding: 0 5%;
+}
+/*recipe-name*/
+.recipe-name h1{
+    margin: 35px 0;
+    padding-top: 5px;
+    font-size: 1.75rem;
+}
+/*material*/
+.material{
+    margin: 35px 0;
+}
+.material h2{
+    border-bottom: dotted 1px #ccc;
+    margin-bottom: 20px;
+    font-size: 1.25rem;
+}
+.cross{
+    display: flex;
+    justify-content: space-between;
+    line-height: 2;
+    border-bottom: dotted 1px #ccc;
+    padding-bottom: 5px;
+}
+/*making*/
+.making h2{
+    margin-bottom: 20px;
+    font-size: 1.25rem;
+}
+.making li{
+    list-style-position: inside;
+    border-bottom: dotted 1px #ccc;
+    line-height: 2;
+    padding-bottom: 5px;
+}
+/*btn*/
+.btn {
+    text-align: center;
+    margin: 80px 0;
+}
+.btn a{
+    padding: 20px 60px;
+    border: solid 1px #2b2a27;
+    text-decoration: none;
+}
+/*フッター*/
+#footer{
+    font-size: 0.75rem;
+    margin: 100px;
+    text-align: center;
+}
+.sns {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+.sns li{
+    padding: 0 10px;
+}
+/*レスポンシブデザイン*/
+@media screen and (max-width: 834px){
+    .flex1{
+        flex-direction: column;
+    }
+    .flex1 .main-picture{
+        width: 100%;
+    }
+    .flex .main-picture img{
+        height: auto;
+    }
+    .flex2{
+        width: 100%;
+    }
+}
